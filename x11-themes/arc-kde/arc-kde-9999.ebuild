@@ -9,7 +9,7 @@ inherit git-r3
 EGIT_REPO_URI="https://github.com/PapirusDevelopmentTeam/${PN}.git"
 LICENSE="GPL-3+ wallpapers? ( CC-BY-SA-4.0 )"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64"
 MY_COMPONENTS=(+aurorae +color-schemes +konsole konversation +kvantum +plasma +wallpapers +yakuake)
 IUSE="${MY_COMPONENTS[*]/+}"
 REQUIRED_USE="|| ( ${MY_COMPONENTS[*]/+} )"
