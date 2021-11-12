@@ -7,12 +7,10 @@ DESCRIPTION="Arc KDE customization"
 HOMEPAGE="https://github.com/PapirusDevelopmentTeam/arc-kde/"
 inherit git-r3
 EGIT_REPO_URI="https://github.com/PapirusDevelopmentTeam/${PN}.git"
-LICENSE="GPL-3+ wallpapers? ( CC-BY-SA-4.0 )"
+LICENSE="GPL-3+ CC-BY-SA-4.0"
 SLOT="0"
 KEYWORDS="amd64"
-MY_COMPONENTS=(konversation yakuake)
-IUSE="${MY_COMPONENTS[*]/+}"
-REQUIRED_USE="|| ( ${MY_COMPONENTS[*]/+} )"
+IUSE="konversation yakuake"
 RESTRICT="primaryuri"
 
 RDEPEND="x11-themes/kvantum"
