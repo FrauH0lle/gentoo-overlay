@@ -9,7 +9,7 @@ inherit git-r3
 EGIT_REPO_URI="https://github.com/PapirusDevelopmentTeam/${PN}.git"
 LICENSE="GPL-3+ CC-BY-SA-4.0"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="amd64"
 IUSE="konversation yakuake"
 RESTRICT="primaryuri"
 

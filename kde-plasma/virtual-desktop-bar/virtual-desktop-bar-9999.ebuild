@@ -11,7 +11,7 @@ DESCRIPTION="KDE Plasma panel applet for managing virtual desktops"
 HOMEPAGE="https://github.com/wsdfhjxc/virtual-desktop-bar"
 inherit git-r3
 EGIT_REPO_URI="https://github.com/wsdfhjxc/virtual-desktop-bar.git"
-KEYWORDS=""
+KEYWORDS="amd64"
 LICENSE="GPL-3"
 SLOT="0"
 IUSE=""
