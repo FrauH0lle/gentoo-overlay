@@ -23,10 +23,9 @@ src_install() {
 	install -vDm 644 fonts/*.otf -t "${ED}/usr/share/fonts/${PN}"
 	install -vDm 644 appstream/*.xml -t "${ED}/usr/share/metainfo"
 
-	install -vdm 755 "${ED}/usr/share/fontconfig/conf.default/"
+	install -vdm 755 "${ED}/etc/fonts/conf.avail/"
 	for _config in fontconfig/*.conf; do
 		_config_path="${ED}/etc/fonts/conf.avail/69-${_config##*/}"
 		install -vDm 644 "${_config}" "${_config_path}"
-		ln -srt "${ED}/etc/fonts/conf.default/" "${_config_path}"
 	done
 }
