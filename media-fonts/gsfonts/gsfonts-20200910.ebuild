@@ -25,8 +25,8 @@ src_install() {
 
 	install -vdm 755 "${ED}/usr/share/fontconfig/conf.default/"
 	for _config in fontconfig/*.conf; do
-		_config_path="${ED}/usr/share/fontconfig/conf.avail/69-${_config##*/}"
+		_config_path="${ED}/etc/fonts/conf.avail/69-${_config##*/}"
 		install -vDm 644 "${_config}" "${_config_path}"
-		ln -srt "${ED}/usr/share/fontconfig/conf.default/" "${_config_path}"
+		ln -srt "${ED}/etc/fonts/conf.default/" "${_config_path}"
 	done
 }
