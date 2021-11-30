@@ -28,6 +28,7 @@ PATCHES=(
 
 src_configure() {
 	local mycmakeargs=(
+		-DSTATIC_BUILD=0
 		-DCXXOPTS_ENABLE_INSTALL=OFF
 	)
 	cmake_src_configure
