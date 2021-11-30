@@ -18,6 +18,7 @@ SLOT="0"
 KEYWORDS="amd64"
 
 RDEPEND="x11-libs/gtk+:3
+		 x11-apps/xmodmap
 		 $(python_gen_cond_dep '
 		   dev-python/pygobject[${PYTHON_USEDEP}]
 		   dev-python/pydbus[${PYTHON_USEDEP}]
