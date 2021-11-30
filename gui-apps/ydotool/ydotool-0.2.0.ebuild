@@ -14,11 +14,7 @@ SLOT="0"
 KEYWORDS=""
 IUSE=""
 
-RDEPEND="dev-libs/libevdevplus
-		 dev-libs/libuinputplus"
-
-DEPEND="${RDEPEND}
-		app-text/scdoc"
+DEPEND="app-text/scdoc"
 
 RESTRICT=network-sandbox
 
@@ -28,7 +24,6 @@ PATCHES=(
 
 src_configure() {
 	local mycmakeargs=(
-		-DSTATIC_BUILD=0
 		-DCXXOPTS_ENABLE_INSTALL=OFF
 	)
 	cmake_src_configure
@@ -36,6 +31,6 @@ src_configure() {
 
 src_install() {
 	cmake_src_install
-
+	dolib.a "${BUILD_DIR}/libydotool_library.a"
 	install -Dm644 "${FILESDIR}/80-uinput.rules" "${ED}/etc/udev/rules.d/80-uinput.rules"
 }
