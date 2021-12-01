@@ -12,6 +12,7 @@ inherit distutils-r1 systemd git-r3
 DESCRIPTION="A tool to change and program the mapping of your input device buttons"
 HOMEPAGE="https://github.com/sezanzeb/key-mapper"
 EGIT_REPO_URI="https://github.com/sezanzeb/key-mapper.git"
+EGIT_BRANCH="key-mapper-devices"
 
 LICENSE="GPL-3"
 SLOT="0"
